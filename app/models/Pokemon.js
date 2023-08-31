@@ -14,6 +14,8 @@ export class Pokemon {
         return `
                     <div class="active-container m-0 p-0 d-flex flex-column">
                     <h3 class="badge grad-2 fs-2 animate__animated animate__rollIn shadow border border-3 border-dark">${this.name}</h3>
+                                        <h3 class="badge grad-3 fs-2 animate__animated animate__rollIn shadow border border-3 border-dark">${this.types} Type</h3>
+                    <img src="${this.img}" class="animate__animated animate__bounceIn " height="300vh">
                     </div>
         `
     }

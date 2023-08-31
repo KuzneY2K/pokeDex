@@ -7,12 +7,14 @@ import { Account } from "../models/Account.js";
 
 export class PokemonController {
     constructor() {
+        pokemonService.setRandomActive()
     }
 
     async setActivePokemon(pokeName) {
         try {
             await pokemonService.setActivePokemon(pokeName)
             pokemonService.drawActive()
+            window.scrollTo(0, 0)
         } catch (error) {
             alert('ERROR!!! YOU FAINTED!')
             console.log(error)
