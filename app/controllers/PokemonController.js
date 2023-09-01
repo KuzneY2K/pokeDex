@@ -8,6 +8,9 @@ import { Account } from "../models/Account.js";
 export class PokemonController {
     constructor() {
         pokemonService.setRandomActive()
+        document.addEventListener('DOMContentLoaded', () => {
+            this.playAudio
+        })
     }
 
     async setActivePokemon(pokeName) {
@@ -19,5 +22,10 @@ export class PokemonController {
             alert('ERROR!!! YOU FAINTED!')
             console.log(error)
         }
+    }
+
+    playAudio() {
+        let bgAudio = document.getElementById('audio')
+        bgAudio.play()
     }
 }

@@ -39,13 +39,6 @@
     scale: 1.1;
 }
 
-.list-cont {
-    max-height: 100vh;
-    top: 10rem;
-    margin-top: 5.5rem !important;
-}
-
-.heading {
-    top: 5rem;
-    margin-top: 2.5rem !important;
+.pokeCard:hover {
+    scale: 1.1;
 }

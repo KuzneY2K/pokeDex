@@ -33,7 +33,7 @@ export class Pokemon {
 
     static WildPokemonTemplate(p) {
         return `
-            <h3 class="badge grad-1 fs-2 animate__animated animate__bounceInRight shadow border border-3 border-dark" onclick="app.PokemonController.setActivePokemon('${p.name}')">${p.name}</h3>
+            <h3 class="badge grad-1 fs-2 animate__animated animate__bounceInRight shadow border border-3 border-dark" onclick="app.PokemonController.setActivePokemon('${p.name}')" id="wildPokemon">${p.name}</h3>
         `
     }
 }

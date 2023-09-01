@@ -1,5 +1,6 @@
 import { AppState } from './AppState.js';
 import { AuthController } from './controllers/AuthController.js';
+import { PokemonController } from './controllers/PokemonController.js';
 import { router } from './router.js';
 
 class App {
